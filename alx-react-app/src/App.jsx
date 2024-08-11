@@ -2,6 +2,7 @@ import Header from './Header';
 import MainContent from './MainContent'; 
 import Footer from './Footer'; 
 import WelcomeMessage from './WelcomeMessage;
+import UserProfile from './components/UserProfile'; 
 import { useState } from 'react';
 import reactLogo from './assets/react.svg';
 import viteLogo from '/vite.svg';
@@ -35,6 +36,10 @@ function App() {
         Click on the Vite and React logos to learn more
       </p>
       <WelcomeMessage />
+      <UserProfile 
+        name="Alice" 
+        age="25" 
+        bio="Loves hiking and photography" />
       <Footer />  
     </>
   )
