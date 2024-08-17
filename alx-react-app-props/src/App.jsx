@@ -36,4 +36,9 @@ function App() {
   );
 }
 
+function UserProfile() {
+  const userData = useContext(UserContext);
+return (
+  );
+}
 export default App;
