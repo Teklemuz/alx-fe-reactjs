@@ -11,7 +11,6 @@ const RegistrationForm = () => {
       alert('All fields are required');
       return;
     }
-    // Handle form submission
     console.log({ username, email, password });
   };
 
