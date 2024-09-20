@@ -16,7 +16,7 @@ const Search = () => {
     setUserData([]);
 
     try {
-      const data = await searchUsers(username, location); 
+      const data = await fetchUserData(username, location);
       const filteredUsers = data.filter(user => user.public_repos >= minRepos);
       setUserData(filteredUsers);
     } catch (err) {
