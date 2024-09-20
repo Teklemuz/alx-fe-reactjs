@@ -37,7 +37,7 @@ const Search = () => {
 
       {loading && <p>Loading...</p>}
       {error && <p>{error}</p>}
-      {userData && (
+      {userData.length > 0 && userData.map((user) => (
         <div>
           <h2>{userData.login}</h2>
           <img src={userData.avatar_url} alt={userData.login} width="100" />
