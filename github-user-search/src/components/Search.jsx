@@ -21,7 +21,7 @@ const Search = () => {
       const filteredUsers = data.filter(user => user.public_repos >= minRepos);
       setUserData(filteredUsers);
     } catch (err) {
-      setError("Looks like we can't find any users");
+      setError("Looks like we can't find the user");
     } finally {
       setLoading(false);
     }
